@@ -30,40 +30,40 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h1>Daniel Constante</h1>
-                                <h2>Web Developer</h2>
+                                <h1>Hello, I'm Daniel,<br/>Web Developer!</h1>
+                                <h2>Living in Aubrey, TX.</h2>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto"></NavbarBrand>
+                        <NavbarBrand className="mr-auto font-weight-bolder"><i className="fa fa-angle-left fa-lg font-weight-bolder"/>  DC WEB DEVELOPER /<i className="fa fa-angle-right fa-lg font-weight-bolder"/></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar className="ml-auto">
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/home">
+                                    <NavLink className="nav-link text-uppercase font-weight-bolder" to="/home">
                                         <i className="fa fa-home fa-lg" /> Home
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/about">
+                                    <NavLink className="nav-link text-uppercase font-weight-bolder" to="/about">
                                         <i className="fa fa-info-circle fa-lg" /> About
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/portfolio">
+                                    <NavLink className="nav-link text-uppercase font-weight-bolder" to="/portfolio">
                                         <i className="fa fa-briefcase fa-lg" /> Portfolio
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/resume">
+                                    <NavLink className="nav-link text-uppercase font-weight-bolder" to="/resume">
                                         <i className="fa fa-file fa-lg" /> Resume
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/contact">
+                                    <NavLink className="nav-link text-uppercase font-weight-bolder" to="/contact">
                                         <i className="fa fa-address-card fa-lg" /> Contact 
                                     </NavLink>
                                 </NavItem>

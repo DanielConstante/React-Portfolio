@@ -24,79 +24,93 @@ function About(props) {
                 <RenderPartner partner={partner} />
             </Media>
         );
-    }); 
+    });
 
     return (
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <Breadcrumb>
+                    <Breadcrumb dark>
                         <BreadcrumbItem>
-                            <Link to="/home">Home</Link>
+                            <Link className="link" to="/home">Home</Link>
                         </BreadcrumbItem>
                         <BreadcrumbItem active>About Us</BreadcrumbItem>
                     </Breadcrumb>
-                    <h2>About Us</h2>
+                    <h2>About</h2>
                     <hr />
                 </div>
             </div>
-            <div className="row row-content">
-                <div className="col-sm-6">
-                    <h3>Our Mission</h3>
+            <div className="row" id="about">
+                <div class="col-lg-4 mt-lg-5">
+                    <img id="aboutPic" src="/assets/images/dcabout.jpg" class="img-fluid" alt="daniel profile"></img>
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content mt-lg-5">
+                    <h3>Web Developer &amp; UI/UX Designer.</h3>
+
+                    <p class="font-BioRhyme">
+
+                        I’m a Front-End Developer located in Dallas/DFW Area. I have a serious passion for
+                        develop webs
+                        and UI effects, animations and creating intuitive, dynamic user experiences.
+
+                        Well-organised person, problem solver, independent employee with high attention to
+                        detail. Fan
+                        of video games, outdoor activities, TV series and Action movies. A family person and
+                        father of
+                        three kids,
+
+                    </p>
+                    <div class="row" id="ul">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> August
+                                    20,
+                                    1986
+                                </li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.danielconstante.com</li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> 469-703-5148</li>
+                                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> New Jersey, USA</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 34</li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> daniel_constante@hotmail.com</li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                            </ul>
+                        </div>
+                    </div>
                     <p>
-                        We present a curated database of the best campsites in the vast
-                        woods and backcountry of the World Wide Web Wilderness. We increase
-                        access to adventure for the public while promoting safe and
-                        respectful use of resources. The expert wilderness trekkers on our
-                        staff personally verify each campsite to make sure that they are up
-                        to our standards. We also present a platform for campers to share
-                        reviews on campsites they have visited with each other.
+                        I help designers, small agencies and businesses bring their ideas to life. Powered
+                        by VS
+                        Code,
+                        Wordpress or Bootstrap.
+                        Interested in the entire frontend spectrum and working on ambitious projects with
+                        positive
+                        people.
                     </p>
                 </div>
-                <div className="col-sm-6">
-                    <Card>
-                        <CardHeader className="bg-primary text-white">
-                            <h3>Facts At a Glance</h3>
-                        </CardHeader>
-                        <CardBody>
-                            <dl className="row">
-                                <dt className="col-6">Founded</dt>
-                                <dd className="col-6">February 3, 2016</dd>
-                                <dt className="col-6">No. of Campsites in 2019</dt>
-                                <dd className="col-6">563</dd>
-                                <dt className="col-6">No. of Reviews in 2019</dt>
-                                <dd className="col-6">4388</dd>
-                                <dt className="col-6">Employees</dt>
-                                <dd className="col-6">42</dd>
-                            </dl>
-                        </CardBody>
-                    </Card>
-                </div>
+            </div>
+            <div className="row row-content">
                 <div className="col">
                     <Card className="bg-light mt-3">
                         <CardBody>
                             <blockquote className="blockquote">
                                 <p className="mb-0">
-                                    I will not follow where the path may lead, but I will go where
-                                    there is no path, and I will leave a trail.
+                                    Writing the first 90 percent of a computer program takes 90 percent of the time. The
+                                    remaining ten
+                                    percent also takes 90
+                                    percent of the time and the final touches also take 90 percent of the time..
                                 </p>
                                 <footer className="blockquote-footer">
-                                    Muriel Strode,{" "}
+                                    N.J. Rubenking.{" "}
                                     <cite title="Source Title">
-                                        "Wind-Wafted Wild Flowers" - The Open Court, 1903
+
                                     </cite>
                                 </footer>
                             </blockquote>
                         </CardBody>
                     </Card>
-                </div>
-            </div>
-            <div className="row row-content">
-                <div className="col-12">
-                    <h3>Community Partners</h3>
-                </div>
-                <div className="col mt-4">
-                    <Media list>{partners}</Media>
                 </div>
             </div>
         </div>

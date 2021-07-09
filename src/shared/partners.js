@@ -22,9 +22,9 @@ export const PARTNERS = [
     },
     {
         id: 3,
-        name: "Node Outdoor Apparel",
-        image: "/assets/images/node-logo.png",
+        name: "Modern Websites",
+        image: "/assets/images/tech.png",
         featured: true,
-        description: "From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered."
+        description: "Manage your website using the web's most popular content management system."
     }
 ]

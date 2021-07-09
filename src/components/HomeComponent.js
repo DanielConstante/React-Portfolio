@@ -14,7 +14,7 @@ function RenderCard({ item }) {
                 <CardTitle>{item.name}</CardTitle>
                 <CardText>{item.description}</CardText>
             </CardBody>
-        </Card>
+        </Card >
     );
 }
 
@@ -22,19 +22,22 @@ function Home(props) {
     return (
         <div className="container">
             <div className="row">
-                <div id="home" class="wrapper">
-                    <div class="typing-demo" id="typingDemo">
-                        Daniel Constante Web Developer.
-                    </div>
+                <div className="col-md m-1">
+                    <RenderCard
+                        item={props.campsite}
+                        isLoading={props.campsitesLoading}
+                        errMess={props.campsitesErrMess}
+                    />
                 </div>
-                <img id="emoji" src="/assets/images/dc.png" alt="dc emoji" class="img-fluid displayed"/>
-                    <div class="text-center">
-                        <a href="#about" type="button" role="button" id="welcome" class="btn mb-lg-5">Welcome</a>
-                    </div>
+                <div className="col-md m-1">
+                    <RenderCard item={props.promotion} />
+                </div>
+                <div className="col-md m-1">
+                    <RenderCard item={props.partner} />
+                </div>
             </div>
-
-            </div>
-            );
+        </div>
+    );
 }
 
-            export default Home;
+export default Home;

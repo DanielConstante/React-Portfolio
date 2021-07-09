@@ -174,7 +174,7 @@ function CampsiteInfo(props) {
                 <div className="row">
                     <div className="col">
                         <Breadcrumb>
-                            <BreadcrumbItem><Link to="/directory">Directory</Link></BreadcrumbItem>
+                            <BreadcrumbItem><Link to="/portfolio">Portfolio</Link></BreadcrumbItem>
                             <BreadcrumbItem active>{props.campsite.name}</BreadcrumbItem>
                         </Breadcrumb>
                         <h2>{props.campsite.name}</h2>
@@ -183,7 +183,6 @@ function CampsiteInfo(props) {
                 </div>
                 <div className="row">
                     <RenderCampsite campsite={props.campsite} />
-                    <RenderComments comments={props.comments} />
                 </div>
             </div>
         );
