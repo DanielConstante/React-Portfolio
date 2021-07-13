@@ -25,13 +25,13 @@ function Footer(props) {
                         <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter" /></a>{' '}
                         
                     </div>
-                    <div className="col-sm-4 text-center">
-                        <a role="button" className="btn btn-link" href="tel:+14697035148"><i className="fa fa-phone" /> 1-469-703-5148</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:daniel_constante86@hotmail.com"><i className="fa fa-envelope-o" /> daniel_constante86@hotmail.com </a>
+                    <div  className="col-sm-4 text-center">
+                        <a id="footer" role="button" className="btn btn-link" href="tel:+14697035148"><i className="fa fa-phone" /> 1-469-703-5148</a><br />
+                        <a id="footer" role="button" className="btn btn-link" href="mailto:daniel_constante86@hotmail.com"><i className="fa fa-envelope-o" /> daniel_constante86@hotmail.com </a>
                     </div>
                 </div>
             </div>
-            <div  className="text-center">
+            <div id="footer" className="text-center">
             <p>DC Network © 2021</p>
             </div>
         </footer>

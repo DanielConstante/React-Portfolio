@@ -28,6 +28,7 @@ h2 {
 }
 
 .site-footer {
+  color: white;
   background-image: linear-gradient(to right, #16F1D4, #45A29E, #C5C6C7, black);
   padding: 20px 0;   
 }
@@ -141,5 +142,13 @@ a {
 }
 
 a:hover, #email:hover {
+  color: #16F1D4;
+}
+
+#footer {
+  color: white;
+}
+
+#footer:hover{
   color: #16F1D4;
 }

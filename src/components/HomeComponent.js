@@ -8,8 +8,8 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 function RenderCard({ item }) {
     return (
-        <Card>
-            <CardImg src={item.image} alt={item.name} />
+        <Card style={{width:"90%", height:"100%"}}>
+            <CardImg style={{width:"100%", height:"40%"}} src={item.image} alt={item.name} />
             <CardBody>
                 <CardTitle>{item.name}</CardTitle>
                 <CardText>{item.description}</CardText>

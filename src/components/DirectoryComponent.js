@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function RenderDirectoryItem({ campsite }) {
     return (
-        <Card>
+        <Card style={{width:"100%", height:"100%"}}>
             <Link to={`/directory/${campsite.id}`}>
                 <CardImg width="100%" src={campsite.image} alt={campsite.name} />
                 <CardImgOverlay>
