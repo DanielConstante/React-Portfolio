@@ -30,7 +30,7 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h1>Hello, I'm Daniel,<br/>Web Developer!</h1>
+                                <h1>Hello, I'm Daniel,<br />Web Developer!</h1>
                                 <h2>Living in Aubrey, TX.</h2>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ class Header extends Component {
                 </Jumbotron>
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto font-weight-bolder"><i className="fa fa-angle-left fa-lg font-weight-bolder"/>  DC WEB DEVELOPER /<i className="fa fa-angle-right fa-lg font-weight-bolder"/></NavbarBrand>
+                        <NavbarBrand className="mr-auto font-weight-bolder"><i className="fa fa-angle-left fa-lg font-weight-bolder" />  DC WEB DEVELOPER /<i className="fa fa-angle-right fa-lg font-weight-bolder" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="ml-auto">
@@ -58,8 +58,13 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
+                                    <NavLink className="nav-link text-uppercase font-weight-bolder" to="/resume">
+                                        <i className="fa fa-file fa-lg" /> Resume
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
                                     <NavLink className="nav-link text-uppercase font-weight-bolder" to="/contact">
-                                        <i className="fa fa-address-card fa-lg" /> Contact 
+                                        <i className="fa fa-address-card fa-lg" /> Contact
                                     </NavLink>
                                 </NavItem>
                             </Nav>

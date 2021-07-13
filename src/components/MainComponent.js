@@ -6,6 +6,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
+import Resume from './ResumeComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
@@ -52,6 +53,7 @@ class Main extends Component {
                             <Route path='/directory/:campsiteId' component={CampsiteWithId} />
                             <Route exact path='/contact' component={Contact} />
                             <Route exact path='/about' render={() => <About partners={this.props.partners} />} />
+                            <Route exact path='/resume' render={() => <Resume partners={this.props.partners} />} />
                             <Redirect to='/home' />
                         </Switch>
                     </CSSTransition>
