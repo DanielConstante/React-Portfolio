@@ -105,5 +105,41 @@ h2 {
 color: #16F1D4;
 }
 
+h3 {
+  color: white;
+}
 
+h3:hover {
+    color: #16F1D4;
+}
 
+label {
+  color: white;
+} 
+label:hover {
+  color: #16F1D4;
+}
+
+.form-container {
+  width:840px;
+  height: 690px;
+  border-radius:8px;
+  box-shadow:0 0 55px -10px #16F1D4;
+  margin:calc(35vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(90vw - 40px);
+  box-sizing:border-box;
+  position: relative;
+}
+
+a {
+  color: white;
+}
+
+#email {
+  color: white;
+}
+
+a:hover, #email:hover {
+  color: #16F1D4;
+}

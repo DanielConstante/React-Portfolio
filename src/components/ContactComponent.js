@@ -44,7 +44,7 @@ class Contact extends Component {
                 <div className="row">
                     <div className="col">
                         <Breadcrumb>
-                            <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                            <BreadcrumbItem><Link className="link" to="/home">Home</Link></BreadcrumbItem>
                             <BreadcrumbItem active>Contact Us</BreadcrumbItem>
                         </Breadcrumb>
                         <h2>Contact Us</h2>
@@ -54,26 +54,27 @@ class Contact extends Component {
 
                 <div className="row row-content align-items-center">
                     <div className="col-sm-4">
-                        <h5>Our Address</h5>
-                        <address>
-                            1 Nucamp Way<br />
-                            Seattle, WA 98001<br />
-                            U.S.A.
-                        </address>
+                    <h3><i class="fa fa-map-marker fa-lg"></i> Location:</h3> 
+                    <a className="text-center" href="https://www.google.com/maps/place/Aubrey,+TX/@33.3165049,-97.0525981,12z/data=!3m1!4b1!4m5!3m4!1s0x864c352505d81d41:0xd509f129b1217693!8m2!3d33.3042834!4d-96.986118">
+                        Aubrey, TX 76227</a>
                     </div>
                     <div className="col">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
+                    <h3><i class="fa fa-envelope fa-lg"></i> Email:</h3>
+                        <a id="email" className="text-center" role="button" className="btn btn-link text-center" href="mailto:daniel_constante86@hotmail.com">daniel_constante86@hotmail.com</a>
+                    </div>
+                    <div className="col">
+                    <h3><i class="fa fa-phone-square fa-lg text-center"></i> Call:</h3>
+                    <a className="text-center" href="tel:4697035148">469-703-5148</a>
                     </div>
                 </div>
 
                 <div className="row row-content">
                     <div className="col-12">
-                        <h2>Send us your Feedback</h2>
+                        <h2>Get in touch</h2>
                         <hr />
                     </div>
                     <div className="col-md-10">
-                        <LocalForm onSubmit={values => this.handleSubmit(values)}>
+                        <LocalForm className="form-container" onSubmit={values => this.handleSubmit(values)}>
                             <Row className="form-group">
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
                                 <Col md={10}>
@@ -195,10 +196,10 @@ class Contact extends Component {
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="feedback" md={2}>Your Feedback</Label>
+                                <Label htmlFor="feedback" md={2}>Message</Label>
                                 <Col md={10}>
                                     <Control.textarea model=".feedback" id="feedback" name="feedback"
-                                        rows="12"
+                                        rows="10"
                                         className="form-control"
                                     />
                                 </Col>
@@ -206,7 +207,7 @@ class Contact extends Component {
                             <Row className="form-group">
                                 <Col md={{ size: 10, offset: 2 }}>
                                     <Button type="submit" color="primary">
-                                        Send Feedback
+                                        Send Message
                                     </Button>
                                 </Col>
                             </Row>

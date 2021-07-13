@@ -44,30 +44,30 @@ function Directory(props) {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-md m-1 text-center">
-                        <a href="words.html" type="button" role="button" id="words" className="btn" target="_blank">Words
+                        <a href="https://wordsanimations.netlify.app/" type="button" role="button" id="words" className="btn" target="_blank" rel="noreferrer">Words
                             Animations</a>
                     </div>
                     <div className="col-md m-1 text-center">
-                        <a href="matching-game.html" type="button" role="button" id="smile" class="btn" target="_blank">Smile
+                        <a href="https://danielconstante.netlify.app/matching-game" type="button" role="button" id="smile" class="btn" target="_blank" rel="noreferrer">Smile
                             Matching Game</a>
                     </div>
                     <div className="col-md m-1 text-center">
                         <a href="https://nucampsitetx.netlify.app/" type="button" role="button" id="number" className="btn"
-                            target="_blank">Campsite TX</a>
+                            target="_blank" rel="noreferrer">Campsite TX</a>
                     </div>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md m-5 text-center">
-                    <a href="https://danielconstante.netlify.app" type="button" role="button" id="personal" className="btn" target="_blank">Bootstrap Portfolio</a>
+                    <a href="https://danielconstante.netlify.app" type="button" role="button" id="personal" className="btn" target="_blank" rel="noreferrer">Bootstrap Portfolio</a>
                 </div>
                 <div className="col-md m-5 text-center">
                     <a href="https://react-campsites.netlify.app/" type="button" role="button" id="number" className="btn"
-                        target="_blank"> React Campsites </a>
+                        target="_blank" rel="noreferrer"> React Campsites </a>
                 </div>
                 <div className="col-md m-5 text-center">
-                    <a href="/home" type="button" role="button" id="number" className="btn"
-                        target="_blank"> React Portfolio </a>
+                    <a href="https://danielconstantereact.netlify.app/" type="button" role="button" id="number" className="btn"
+                        target="_blank" rel="noreferrer"> React Portfolio </a>
                 </div>
             </div>
         </div>
